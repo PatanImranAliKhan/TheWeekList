@@ -8,10 +8,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/health', (req, res) => {
-
-})
-
 const UserRoute = require('./routes/UserRoute');
 const weekListRoutes = require('./routes/WeekListRoutes');
 
